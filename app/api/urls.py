@@ -4,6 +4,7 @@ from app.api import views
 
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
+router.register(r'places', views.PlaceViewSet)
 
 # Use automatic URL routing. Include login URLs for the browsable API.
 urlpatterns = [
